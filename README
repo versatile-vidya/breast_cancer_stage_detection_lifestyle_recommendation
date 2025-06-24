@@ -1,0 +1,30 @@
+#  Breast Cancer Stage Detection and lifesytle 
+
+This project uses a deep learning model to automatically detect, segment, and analyze breast cancer from medical images (e.g., mammograms).
+ The model also estimates tumor size, classifies the cancer stage, and provides personalized health recommendations (diet, exercise, and yoga) based on the stage.
+
+---
+
+## 📁 Project Structure
+
+sample/	(for testing purpose)
+	 Cancer/
+	 NonCancer/
+images/	(for training purpose)
+	Cancer/
+	NonCancer/ 
+prediction.ipynb (actual code)
+
+
+How to Run
+
+1.Load the image
+2.Predict the mask using the model
+3.Save and visualize the mask
+4.Classify if cancerous
+5.Run diagnosis
+
+###Example
+image_path = "sample/NonCancer/IMG (149).jpg"
+run_diagnosis(image_path, processed_mask, cancer_status)
+
