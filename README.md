@@ -1,0 +1,68 @@
+# Breast Cancer Stage Detection and Lifestyle recommandation 
+
+This project uses a deep learning model to automatically detect, segment, and analyze breast cancer from medical images (e.g., mammograms).
+The model also estimates tumor size, classifies the cancer stage, and provides personalized health recommendations (diet, exercise, and yoga) based on the stage. The pipeline is implemented in Python using Keras/TensorFlow and OpenCV.
+
+##  Overview
+
+This project performs automated breast cancer diagnosis from medical mammograms images:
+1. Image Classification — Determine if the input image is cancerous or not.
+2. Tumor Segmentation — If cancerous, segment the tumor region using an Attention U-Net model.
+3. Tumor Size Estimation — Compute size and possibly area or volume from the mask.
+4. Cancer Stage Classification — Classify the tumor into Stage I, II, III based on size.
+5. Personalized Recommendations — Suggest diet, exercise, and yoga based on detected cancer stage.
+6. Report Generation — Summarize everything in a PDF format.
+
+##  Directory Structure
+
+project/
+	-Images/		#dataset 
+		Cancer/
+			img1.jpg
+			img1_mask.jpg
+			...
+		NonCancer/
+			img1.jpg
+			 ...
+		
+	-PREDICTION_MODEL.ipynb # Jupyter notebook with full pipeline
+	-prediciton_mask.jpg
+	-diagnosis_report.pdf
+	-diet_plan.sql
+	-Sample/		# for testing dataset 
+		Cancer/
+			img1.jpg
+			img1_mask.jpg
+			...
+		NonCancer/
+			img1.jpg
+			 ...
+	-requirments.txt
+	-README
+		
+##  How to Run
+1.Install dependencies written in requirments.txt
+2.Load the image
+3.Predict the mask using the model
+4.Save and visualize the mask
+5.Classify if cancerous
+6.Run diagnosis
+
+###Example
+image_path = "sample/NonCancer/IMG (149).jpg"
+run_diagnosis(image_path, processed_mask, cancer_status)
+
+##  Outputs
+
+Each processed image generates:
+- **Predicted Mask**: Tumor segmented region.
+- **Tumor Metrics**: Size and area in pixels (converted to cm² if pixel spacing known).
+- **Stage**: Based on medical size thresholds.
+- **PDF Report**: Summarized classification and segmentation output.
+
+##  Sample Output
+
+- **Classification**: Cancerous
+- **Tumor Size**: 0.69 cm 
+- **Stage**: Stage I
+- **PDF**: Stored in "diagnosis_report.pdf
