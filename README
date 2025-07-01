@@ -25,7 +25,7 @@ project/
 			img1.jpg
 			 ...
 		
-	-PREDICTION_MODEL.ipynb # Jupyter notebook with full pipeline
+	-imaging.ipynb 		# Jupyter notebook with full pipeline
 	-prediciton_mask.jpg
 	-diagnosis_report.pdf
 	-diet_plan.sql
