@@ -1,0 +1,25 @@
+# Libraries
+numpy
+pandas
+matplotlib
+scikit-learn
+
+# Deep Learning
+tensorflow>=2.8
+keras
+
+# Image Processing
+opencv-python
+Pillow
+
+# PDF Generation
+reportlab
+
+# For working with notebooks
+ipython
+jupyter notebook 
+
+# SQL support (for health recommendations)
+psycopg2-binary  # PostgreSQL connector
+
+
