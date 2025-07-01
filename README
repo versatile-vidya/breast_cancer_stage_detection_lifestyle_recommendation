@@ -1,9 +1,9 @@
-# Breast Cancer Stage Detection and Lifestyle recommandation 
+#Breast Cancer Stage Detection and Lifestyle recommandation 
 
 This project uses a deep learning model to automatically detect, segment, and analyze breast cancer from medical images (e.g., mammograms).
 The model also estimates tumor size, classifies the cancer stage, and provides personalized health recommendations (diet, exercise, and yoga) based on the stage. The pipeline is implemented in Python using Keras/TensorFlow and OpenCV.
 
-##  Overview
+##Overview
 
 This project performs automated breast cancer diagnosis from medical mammograms images:
 1. Image Classification — Determine if the input image is cancerous or not.
@@ -13,7 +13,7 @@ This project performs automated breast cancer diagnosis from medical mammograms 
 5. Personalized Recommendations — Suggest diet, exercise, and yoga based on detected cancer stage.
 6. Report Generation — Summarize everything in a PDF format.
 
-##  Directory Structure
+##Directory Structure
 
 project/
 	-Images/		#dataset 
@@ -40,7 +40,7 @@ project/
 	-requirments.txt
 	-README
 		
-##  How to Run
+##How to Run
 1.Install dependencies written in requirments.txt
 2.Load the image
 3.Predict the mask using the model
@@ -52,7 +52,7 @@ project/
 image_path = "sample/NonCancer/IMG (149).jpg"
 run_diagnosis(image_path, processed_mask, cancer_status)
 
-##  Outputs
+##Outputs
 
 Each processed image generates:
 - **Predicted Mask**: Tumor segmented region.
@@ -60,7 +60,7 @@ Each processed image generates:
 - **Stage**: Based on medical size thresholds.
 - **PDF Report**: Summarized classification and segmentation output.
 
-##  Sample Output
+##Sample Output
 
 - **Classification**: Cancerous
 - **Tumor Size**: 0.69 cm 
