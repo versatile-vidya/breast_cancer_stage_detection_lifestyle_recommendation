@@ -15,42 +15,43 @@ This project performs automated breast cancer diagnosis from medical mammograms 
 
 ##  Directory Structure
 
-project/
-	-Images/		#dataset 
-		Cancer/
-			img1.jpg
-			img1_mask.jpg
-			...
-		NonCancer/
-			img1.jpg
-			 ...
-		
-	-PREDICTION_MODEL.ipynb # Jupyter notebook with full pipeline
-	-prediciton_mask.jpg
-	-diagnosis_report.pdf
-	-diet_plan.sql
-	-Sample/		# for testing dataset 
-		Cancer/
-			img1.jpg
-			img1_mask.jpg
-			...
-		NonCancer/
-			img1.jpg
-			 ...
-	-requirments.txt
-	-README
+	-project/
+		-Images/		#dataset 
+			Cancer/
+				img1.jpg
+				img1_mask.jpg
+				...
+			NonCancer/
+				img1.jpg
+				 ...
+		-PREDICTION_MODEL.ipynb # Jupyter notebook with full pipeline
+		-prediciton_mask.jpg
+		-diagnosis_report.pdf
+		-diet_plan.sql
+		-Sample/		# for testing dataset 
+			Cancer/
+				img1.jpg
+				img1_mask.jpg
+				...
+			NonCancer/
+				img1.jpg
+			 	...
+		-requirments.txt
+		-README
 		
 ##  How to Run
-1.Install dependencies written in requirments.txt
-2.Load the image
-3.Predict the mask using the model
-4.Save and visualize the mask
-5.Classify if cancerous
-6.Run diagnosis
+
+	1.Install dependencies written in requirments.txt
+	2.Load the image
+	3.Predict the mask using the model
+	4.Save and visualize the mask
+	5.Classify if cancerous
+	6.Run diagnosis
 
 ###Example
-image_path = "sample/NonCancer/IMG (149).jpg"
-run_diagnosis(image_path, processed_mask, cancer_status)
+	
+ 	image_path = "sample/NonCancer/IMG (149).jpg"
+	run_diagnosis(image_path, processed_mask, cancer_status)
 
 ##  Outputs
 
@@ -62,7 +63,7 @@ Each processed image generates:
 
 ##  Sample Output
 
-- **Classification**: Cancerous
-- **Tumor Size**: 0.69 cm 
-- **Stage**: Stage I
-- **PDF**: Stored in "diagnosis_report.pdf
+	- **Classification**: Cancerous
+	- **Tumor Size**: 0.69 cm 
+	- **Stage**: Stage I
+	- **PDF**: Stored in "diagnosis_report.pdf
